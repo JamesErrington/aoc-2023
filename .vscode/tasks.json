@@ -1,0 +1,29 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "Make active file",
+            "command": "clang",
+            "args": [
+				"-Wall",
+				"-Wextra",
+				"-O0",
+				"-g",
+				"-o",
+				"${workspaceRoot}/build/${fileDirnameBasename}/main",
+                "${file}"
+            ],
+            "options": {
+                "cwd": "${workspaceRoot}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+        }
+    ],
+    "version": "2.0.0"
+}

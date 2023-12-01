@@ -17,4 +17,4 @@ clang -Wall -Wextra -O0 -o $exec $src
 
 chmod +x $exec
 
-./$exec
+./$exec $1
